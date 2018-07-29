@@ -17,7 +17,7 @@ formulahendry.auto-close-tag
 shardulm94.trailing-spaces
 robertohuertasm.vscode-icons
 
-asks you for .gitconfig username and email, and replaces .bashrc (mine has git branch indication and some nice aliases) and VSCode User Settings and Keybindings. Don't execute until you read through the shell script and understand what everthing does.
+and asks you for .gitconfig username and email, and replaces .bashrc (mine has git branch indication and some nice aliases) and VSCode User Settings and Keybindings. Don't execute until you read through the shell script and understand what everthing does.
 
 Remember to
 
