@@ -13,8 +13,9 @@
 #clear terminal
 clear
 
+echo "---------------------------------------------------"
 echo "Hi $USER! Commencing dev environment configuration:"
-echo "___________________________________________________"
+echo "---------------------------------------------------"
 
 #define user vars
 echo What is your .gitconfig username?
@@ -99,4 +100,4 @@ else
 fi
 
 echo "Happy hacking - AVH"
-echo "___________________________________________________"
+echo "---------------------------------------------------"
