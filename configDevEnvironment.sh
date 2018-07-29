@@ -55,25 +55,33 @@ code --install-extension shardulm94.trailing-spaces
 code --install-extension robertohuertasm.vscode-icons
 
 #copy vscode user settings
-#settings are for Linux below - for MacOS use ~/Library/Application Support/Code
-if yes | cp -f ./data/settings.json ~/.config/Code/User/settings.json ; then
-    echo "Replaced ~/.config/Code/User/settings.json with my VSCode User Settings"
+#VSCOde settings location for Linux: ~/.config/Code/User
+#VSCOde settings location for MacOS use ~/Library/Application Support/Code
+if yes | cp -f ./data/settings.json ~/Library/Application Support/Code/settings.json ; then
+    echo "Replaced settings.json with my VSCode User Settings"
 else
-    echo "FAILED to replace ~/.config/Code/User/settings.json with my VSCode User Settings"
+    echo "FAILED to replace settings.json with my VSCode User Settings"
 fi
 
 #copy vscode user keybindings
-if yes | cp -f ./data/keybindings.json ~/.config/Code/User/keybindings.json ; then
-    echo "Replaced ~/.config/Code/User/keybindings.json with my VSCode User Keybindings"
+if yes | cp -f ./data/keybindings.json ~/Library/Application Support/Code/keybindings.json ; then
+    echo "Replaced keybindings.json with my VSCode User Keybindings"
 else
-    echo "FAILED to replace ~/.config/Code/User/keybindings.json with my VSCode User Keybindings"
+    echo "FAILED to replace keybindings.json with my VSCode User Keybindings"
 fi
 
 #copy .bashrc
 if yes | cp -f ./data/.bashrc ~/ ; then
-    echo "Replaced .bashrc with a better one with git branch indication and custom alises"
+    echo "Replaced .bashrc"
 else
-    echo "FAILED to replace .bashrc with a better one with git branch indication and custom alises"
+    echo "FAILED to replace .bashrc"
+fi
+
+#copy .bash_profile
+if yes | cp -f ./data/.bash_profile ~/ ; then
+    echo "Replaced .bash_profile"
+else
+    echo "FAILED to replace .bash_profile"
 fi
 
 #reload .bashrc
