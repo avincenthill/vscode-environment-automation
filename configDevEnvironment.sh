@@ -14,6 +14,7 @@
 clear
 
 echo "Hi $USER! Commencing dev environment configuration:"
+echo "___________________________________________________"
 
 #define user vars
 echo What is your .gitconfig username?
@@ -28,10 +29,18 @@ read EMAIL
 #EOF
 
 #configure .gitconfig
-echo "Configuring .gitconfig with username: $GITUSERNAME"
-git config --global user.name $GITUSERNAME
-echo "Configuring .gitconfig with email: $EMAIL"
-git config --global user.email $EMAIL
+if git config --global user.name $GITUSERNAME ; then
+    echo "Configured .gitconfig with username: $GITUSERNAME"
+else
+    echo "FAILED to configure .gitconfig with username: $GITUSERNAME"
+fi
+
+if git config --global user.email $EMAIL ; then
+    echo "Configured .gitconfig with email: $EMAIL"
+else
+    echo "FAILED to configure .gitconfig with email: $EMAIL"
+fi
+
 #(unsure about this part)
 #echo "Configuring .gitconfig with default editor VSCode"
 #git config --global core.editor code
@@ -55,21 +64,39 @@ code --install-extension shardulm94.trailing-spaces
 code --install-extension robertohuertasm.vscode-icons
 
 #copy vscode user settings
-echo "Replacing~/.config/Code/User/settings.json with my VSCode User Settings"
-yes | cp -f ./data/settings.json ~/.config/Code/User/settings.json
+if yes | cp -f ./data/settings.json ~/.config/Code/User/settings.json ; then
+    echo "Replaced ~/.config/Code/User/settings.json with my VSCode User Settings"
+else
+    echo "FAILED to replace ~/.config/Code/User/settings.json with my VSCode User Settings"
+fi
 
 #copy vscode user keybindings
-echo "Replacing~/.config/Code/User/keybindings.json with my VSCode User Keybindings"
-yes | cp -f ./data/keybindings.json ~/.config/Code/User/keybindings.json
+if yes | cp -f ./data/keybindings.json ~/.config/Code/User/keybindings.json ; then
+    echo "Replaced ~/.config/Code/User/keybindings.json with my VSCode User Keybindings"
+else
+    echo "FAILED to replace ~/.config/Code/User/keybindings.json with my VSCode User Keybindings"
+fi
 
 #copy .bashrc
-echo "Replacing .bashrc with a better one with git branch indication and custom alises"
-yes | cp -f ./data/.bashrc ~/
-
-#launch vscode
-echo "Launching VSCode"
-code
+if yes | cp -f ./data/.bashrc ~/ ; then
+    echo "Replaced .bashrc with a better one with git branch indication and custom alises"
+else
+    echo "FAILED to replace .bashrc with a better one with git branch indication and custom alises"
+fi
 
 #reload .bashrc
-echo "Reloading .bashrc - Happy hacking!"
-. ~/.bashrc
+if . ~/.bashrc ; then
+    echo "Reloaded .bashrc"
+else
+    echo "FAILED to reload .bashrc"
+fi
+
+#launch vscode
+if code ; then
+    echo "Launched VSCode"
+else
+    echo "FAILED to launch VSCode"
+fi
+
+echo "Happy hacking - AVH"
+echo "___________________________________________________"
