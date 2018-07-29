@@ -55,6 +55,7 @@ code --install-extension shardulm94.trailing-spaces
 code --install-extension robertohuertasm.vscode-icons
 
 #copy vscode user settings
+#settings are for Linux below - for MacOS use ~/Library/Application Support/Code
 if yes | cp -f ./data/settings.json ~/.config/Code/User/settings.json ; then
     echo "Replaced ~/.config/Code/User/settings.json with my VSCode User Settings"
 else
