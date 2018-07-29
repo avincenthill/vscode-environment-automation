@@ -27,4 +27,4 @@ before executing the script in the root directory of this repo with
 
 `./configDevEnvironment.sh`
 
-Happy hacking!
+Happy hacking! -AVH
