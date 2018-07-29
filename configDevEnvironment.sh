@@ -13,7 +13,6 @@
 #define user vars - CHANGE THESE BEFORE RUNNING!
 GITUSERNAME="exampleUserName"
 EMAIL="example@gmail.com"
-VSCODEDIR="~/.config/Code/User/"
 
 #clear terminal
 clear
@@ -36,7 +35,7 @@ git config --global user.email $EMAIL
 #git config --global core.editor code
 
 #install vscode extensions - need to make sure "code" is working before the below
-echo "Installing my favorite VSCode extensions"
+echo "Installing my favorite VSCode extensions:"
 code --install-extension shardulm94.trailing-spaces
 code --install-extension formulahendry.auto-rename-tag
 code --install-extension wesbos.theme-cobalt2
@@ -54,10 +53,12 @@ code --install-extension shardulm94.trailing-spaces
 code --install-extension robertohuertasm.vscode-icons
 
 #copy vscode user settings
-yes | sudo cp -f ./data/settings.json $VSCODEDIR
+echo "Replacing~/.config/Code/User/settings.json with my VSCode User Settings"
+yes | sudo cp -f ./data/settings.json ~/.config/Code/User/settings.json
 
 #copy vscode user keybindings
-yes | sudo cp -f ./data/keybindings.json $VSCODEDIR
+echo "Replacing~/.config/Code/User/keybindings.json with my VSCode User Keybindings"
+yes | sudo cp -f ./data/keybindings.json ~/.config/Code/User/keybindings.json
 
 #copy .bashrc
 echo "Replacing .bashrc with a better one with git branch indication and custom alises"
