@@ -133,6 +133,7 @@ alias gpom='git push origin master'
 alias gphm='git push heroku master'
 alias gpb='git push origin master && git push heroku master'
 alias gac='git add . && git commit'
+alias status='git status'
 
 alias c='clear'
 
