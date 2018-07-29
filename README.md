@@ -1,4 +1,5 @@
-# vscode-environment
+##Automate your dev setup on a new machine!
+# vscode-environment-automation
 A bash file that quickly configs git, vscode, and .bashrc to my liking! This installs the following VSCode extensions
 
 ```
