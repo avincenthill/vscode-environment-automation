@@ -6,7 +6,7 @@
 
 #before executing in the root directory of this repo with
 
-#sudo ./configDevEnvironment.sh
+#./configDevEnvironment.sh
 
 #and remember to change display arrangement to "extend" (Apple menu>System Preferences>Displays>Arrangement) and change user vars below.
 
