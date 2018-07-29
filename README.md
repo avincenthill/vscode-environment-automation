@@ -3,7 +3,7 @@
 
 TLDR: configs dev enviroment for Hack Reactor workstations quickly with:
 
-```git clone https://github.com/avincenthill/vscode-environment-automation.git %% cd vscode-environment/ && chmod u+x configDevEnvironment.sh && ./configDevEnvironment.sh```
+```git clone https://github.com/avincenthill/vscode-environment-automation.git && cd vscode-environment-automation/ && chmod u+x configDevEnvironment.sh && ./configDevEnvironment.sh```
 
 
 This shell script quickly configures git (.gitconfig), VSCode, and bash (.bashrc) with my settings. It also installs the following VSCode extensions
