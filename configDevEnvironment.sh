@@ -10,16 +10,16 @@
 
 #and remember to change display arrangement to "extend" (Apple menu>System Preferences>Displays>Arrangement).
 
+#clear terminal
+clear
+
+echo "Hi $USER! Commencing dev environment configuration:"
+
 #define user vars
 echo What is your .gitconfig username?
 read GITUSERNAME
 echo What is your .gitconfig email?
 read EMAIL
-
-#clear terminal
-clear
-
-echo "Hi $USER! Commencing dev environment configuration:"
 
 #add VSCode to PATH (unsure about this part)
 #echo "Adding VSCode to PATH"
