@@ -1,15 +1,5 @@
 #!/bin/bash
 
-#remember to
-
-#chmod u+x configDevEnvironment.sh
-
-#before executing in the root directory of this repo with
-
-#./configDevEnvironment.sh
-
-#and remember to change display arrangement to "extend" (Apple menu>System Preferences>Displays>Arrangement).
-
 #clear terminal
 clear
 
