@@ -56,15 +56,15 @@ code --install-extension robertohuertasm.vscode-icons
 
 #copy vscode user settings
 echo "Replacing~/.config/Code/User/settings.json with my VSCode User Settings"
-yes | sudo cp -f ./data/settings.json ~/.config/Code/User/settings.json
+yes | cp -f ./data/settings.json ~/.config/Code/User/settings.json
 
 #copy vscode user keybindings
 echo "Replacing~/.config/Code/User/keybindings.json with my VSCode User Keybindings"
-yes | sudo cp -f ./data/keybindings.json ~/.config/Code/User/keybindings.json
+yes | cp -f ./data/keybindings.json ~/.config/Code/User/keybindings.json
 
 #copy .bashrc
 echo "Replacing .bashrc with a better one with git branch indication and custom alises"
-yes | sudo cp -f ./data/.bashrc ~/
+yes | cp -f ./data/.bashrc ~/
 
 #launch vscode
 echo "Launching VSCode"
