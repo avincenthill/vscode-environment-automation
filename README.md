@@ -21,7 +21,7 @@ shardulm94.trailing-spaces
 robertohuertasm.vscode-icons
 ```
 
-and asks you for .gitconfig username and email, and replaces .bashrc (mine has git branch indication and some nice aliases) and VSCode User Settings and Keybindings. Don't execute until you read through the shell script and understand what everthing does, and I don't assume liability for you using this and accidentally overwriting your non-backed-up .bashrc.
+and asks you for .gitconfig username and email, and replaces .bashrc (mine has git branch indication and some nice aliases) and replaces VSCode User Settings and Keybindings with my preferences (wes bos cobalt2 color scheme, line bubbling/duplication, and more). Don't execute until you read through the shell script and understand what everthing does, and I don't assume liability for you using this and accidentally overwriting your non-backed-up .bashrc.
 
 Remember to
 
