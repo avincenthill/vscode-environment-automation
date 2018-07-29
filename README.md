@@ -1,7 +1,7 @@
 # Automate your dev setup on a new machine!
 ## vscode-environment-automation
 
-This shell script quickly configs git, vscode, and .bashrc with my settings. This installs the following VSCode extensions
+This shell script quickly configures git (.gitconfig), VSCode, and bash (.bashrc) with my settings. This installs the following VSCode extensions
 
 ```
 shardulm94.trailing-spaces
