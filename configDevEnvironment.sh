@@ -75,14 +75,14 @@ code --install-extension robertohuertasm.vscode-icons
 #copy vscode user settings - TBD make this work on Mac workstations
 #VSCOde settings location for Linux: ~/.config/Code/User
 #VSCOde settings location for MacOS use ~/Library/Application Support/Code
-if yes | cp -f ./data/settings.json ~/Library/Application Support/Code/settings.json ; then
+if yes | cp -f ./data/settings.json "/Users/student/Library/Application Support/Code/User/settings.json" ; then
     echo "Replaced settings.json with my VSCode User Settings"
 else
     echo "FAILED to replace settings.json with my VSCode User Settings"
 fi
 
 #copy vscode user keybindings
-if yes | cp -f ./data/keybindings.json ~/Library/Application Support/Code/keybindings.json ; then
+if yes | cp -f ./data/keybindings.json "/Users/student/Library/Application Support/Code/User/keybindings.json" ; then
     echo "Replaced keybindings.json with my VSCode User Keybindings"
 else
     echo "FAILED to replace keybindings.json with my VSCode User Keybindings"
