@@ -1,4 +1,7 @@
 {
+  "editor.tabSize": 2
+  //TBD add HR style guide
+  
   //word wrap
   "editor.wordWrap": "on",
   // An array of languages where Emmet abbreviations should not be expanded.
