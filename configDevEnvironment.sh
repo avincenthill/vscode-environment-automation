@@ -14,10 +14,10 @@ echo "---------------------------------------------------"
 #read EMAIL
 
 #add VSCode to PATH (unsure about this part)
-#echo "Adding VSCode to PATH"
-#cat << EOF >> ~/.bash_profile
-#export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-#EOF
+echo "Adding VSCode to PATH"
+cat << EOF >> ~/.bash_profile
+export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+EOF
 
 #configure .gitconfig
 #if git config --global user.name $GITUSERNAME ; then
