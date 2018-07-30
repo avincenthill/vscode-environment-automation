@@ -8,10 +8,10 @@ echo "Hi $USER! Commencing dev environment configuration:"
 echo "---------------------------------------------------"
 
 #define user vars
-echo What is your .gitconfig username?
-read GITUSERNAME
-echo What is your .gitconfig email?
-read EMAIL
+#echo What is your .gitconfig username?
+#read GITUSERNAME
+#echo What is your .gitconfig email?
+#read EMAIL
 
 #add VSCode to PATH (unsure about this part)
 #echo "Adding VSCode to PATH"
@@ -20,17 +20,17 @@ read EMAIL
 #EOF
 
 #configure .gitconfig
-if git config --global user.name $GITUSERNAME ; then
-    echo "Configured .gitconfig with username: $GITUSERNAME"
-else
-    echo "FAILED to configure .gitconfig with username: $GITUSERNAME"
-fi
-
-if git config --global user.email $EMAIL ; then
-    echo "Configured .gitconfig with email: $EMAIL"
-else
-    echo "FAILED to configure .gitconfig with email: $EMAIL"
-fi
+#if git config --global user.name $GITUSERNAME ; then
+#    echo "Configured .gitconfig with username: $GITUSERNAME"
+#else
+#    echo "FAILED to configure .gitconfig with username: $GITUSERNAME"
+#fi
+#
+#if git config --global user.email $EMAIL ; then
+#    echo "Configured .gitconfig with email: $EMAIL"
+#else
+#    echo "FAILED to configure .gitconfig with email: $EMAIL"
+#fi
 
 #(unsure about this part)
 #echo "Configuring .gitconfig with default editor VSCode"
