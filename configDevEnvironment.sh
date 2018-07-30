@@ -13,12 +13,6 @@ echo "---------------------------------------------------"
 #echo What is your .gitconfig email?
 #read EMAIL
 
-#add VSCode to PATH (unsure about this part)
-#echo "Adding VSCode to PATH"
-#cat << EOF >> ~/.bash_profile
-#export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-#EOF
-
 #configure .gitconfig
 #if git config --global user.name $GITUSERNAME ; then
 #    echo "Configured .gitconfig with username: $GITUSERNAME"
@@ -36,39 +30,6 @@ echo "---------------------------------------------------"
 #echo "Configuring .gitconfig with default editor VSCode"
 #git config --global core.editor code
 
-#install vscode extensions - need to make sure "code" is working before the below
-echo "Installing my favorite VSCode extensions:"
-code --install-extension shardulm94.trailing-spaces
-code --install-extension formulahendry.auto-rename-tag
-code --install-extension wesbos.theme-cobalt2
-code --install-extension dbaeumer.vscode-eslint
-code --install-extension donjayamanne.githistory
-code --install-extension sysoev.language-stylus
-code --install-extension ritwickdey.liveserver
-code --install-extension esbenp.prettier-vscode
-code --install-extension ms-python.python
-code --install-extension equimper.react-native-react-redux
-code --install-extension wayou.vscode-todo-highlight
-code --install-extension vsmobile.vscode-react-native
-code --install-extension formulahendry.auto-close-tag
-code --install-extension shardulm94.trailing-spaces
-code --install-extension robertohuertasm.vscode-icons
-
-#copy vscode user settings
-#VSCOde settings location for Linux: ~/.config/Code/User
-#VSCOde settings location for MacOS use ~/Library/Application Support/Code
-if yes | cp -f ./data/settings.json ~/Library/Application Support/Code/settings.json ; then
-    echo "Replaced settings.json with my VSCode User Settings"
-else
-    echo "FAILED to replace settings.json with my VSCode User Settings"
-fi
-
-#copy vscode user keybindings
-if yes | cp -f ./data/keybindings.json ~/Library/Application Support/Code/keybindings.json ; then
-    echo "Replaced keybindings.json with my VSCode User Keybindings"
-else
-    echo "FAILED to replace keybindings.json with my VSCode User Keybindings"
-fi
 
 #copy .bashrc
 if yes | cp -f ./data/.bashrc ~/ ; then
@@ -89,6 +50,42 @@ if . ~/.bashrc ; then
     echo "Reloaded .bashrc"
 else
     echo "FAILED to reload .bashrc"
+fi
+
+#TBD: make "code" work from this point on
+
+#install vscode extensions - need to make sure "code" is working before the below
+echo "Installing my favorite VSCode extensions:"
+code --install-extension shardulm94.trailing-spaces
+code --install-extension formulahendry.auto-rename-tag
+code --install-extension wesbos.theme-cobalt2
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension donjayamanne.githistory
+code --install-extension sysoev.language-stylus
+code --install-extension ritwickdey.liveserver
+code --install-extension esbenp.prettier-vscode
+code --install-extension ms-python.python
+code --install-extension equimper.react-native-react-redux
+code --install-extension wayou.vscode-todo-highlight
+code --install-extension vsmobile.vscode-react-native
+code --install-extension formulahendry.auto-close-tag
+code --install-extension shardulm94.trailing-spaces
+code --install-extension robertohuertasm.vscode-icons
+
+#copy vscode user settings - TBD make this work on Mac workstations
+#VSCOde settings location for Linux: ~/.config/Code/User
+#VSCOde settings location for MacOS use ~/Library/Application Support/Code
+if yes | cp -f ./data/settings.json ~/Library/Application Support/Code/settings.json ; then
+    echo "Replaced settings.json with my VSCode User Settings"
+else
+    echo "FAILED to replace settings.json with my VSCode User Settings"
+fi
+
+#copy vscode user keybindings
+if yes | cp -f ./data/keybindings.json ~/Library/Application Support/Code/keybindings.json ; then
+    echo "Replaced keybindings.json with my VSCode User Keybindings"
+else
+    echo "FAILED to replace keybindings.json with my VSCode User Keybindings"
 fi
 
 #launch vscode

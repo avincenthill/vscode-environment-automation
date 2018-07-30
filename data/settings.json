@@ -1,13 +1,10 @@
 {
-  "editor.tabSize": 2
+  "editor.tabSize": 2,
   //TBD add HR style guide
-  
   //word wrap
   "editor.wordWrap": "on",
   // An array of languages where Emmet abbreviations should not be expanded.
-  "emmet.excludeLanguages": [
-    "markdown"
-  ],
+  "emmet.excludeLanguages": ["markdown"],
   // Path to a folder containing Emmet profiles and snippets.'
   // Enable Emmet abbreviations in languages that are not supported by default. Add a mapping here between the language and emmet supported language.
   //  E.g.: {"vue-html": "html", "javascript": "javascriptreact"}
@@ -55,11 +52,7 @@
   "terminal.integrated.fontFamily": "Ubuntu mono",
   "window.zoomLevel": 1,
   "todohighlight.isEnable": true,
-  "todohighlight.keywords": [
-    "TBD",
-    "TODO",
-    "todo"
-  ],
+  "todohighlight.keywords": ["TBD", "TODO", "todo"],
   "workbench.startupEditor": "newUntitledFile",
   "workbench.sideBar.location": "left",
   "explorer.confirmDelete": false,
