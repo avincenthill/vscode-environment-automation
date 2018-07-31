@@ -52,7 +52,12 @@ else
     echo "FAILED to reload .bashrc"
 fi
 
-#TBD: make "code" work from this point on
+#reload .bash_profile
+if . ~/.bash_profile ; then
+    echo "Reloaded .bash_profile"
+else
+    echo "FAILED to reload .bash_profile"
+fi
 
 #install vscode extensions - need to make sure "code" is working before the below
 echo "Installing my favorite VSCode extensions:"
