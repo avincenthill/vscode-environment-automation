@@ -141,5 +141,9 @@ alias bashrc='cd ~ && code .bashrc'
 
 alias processing='~/processing/processing'
 
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
 cd ~/Projects
 echo "Hi $USER! It is $(date '+%A %B %d %Y %r') and time to code!"
