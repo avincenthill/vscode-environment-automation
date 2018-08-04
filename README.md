@@ -1,7 +1,7 @@
 # Automate your dev setup on a new machine!
 ## vscode-environment-automation
 
-TLDR: configs dev enviroment for Hack Reactor workstations quickly with:
+TLDR: configs dev enviroment for Hack Reactor workstations quickly by executing this in terminal:
 
 ```cd ~ && git clone https://github.com/avincenthill/vscode-environment-automation.git && cd vscode-environment-automation/ && chmod u+x configDevEnvironment.sh && ./configDevEnvironment.sh```
 
