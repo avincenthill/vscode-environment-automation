@@ -1,4 +1,4 @@
-# Automate your dev setup on a new machine!
+# Automate your dev environment setup on a new machine!
 ## vscode-environment-automation
 
 TLDR: configs dev enviroment for Hack Reactor workstations quickly by executing this in terminal:
