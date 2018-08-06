@@ -76,6 +76,10 @@ code --install-extension vsmobile.vscode-react-native
 code --install-extension formulahendry.auto-close-tag
 code --install-extension shardulm94.trailing-spaces
 code --install-extension robertohuertasm.vscode-icons
+code --install-extension msjsdiag.debugger-for-chrome
+code --install-extension formulahendry.code-runner
+code --install-extension eamodio.gitlens
+
 
 #copy vscode user settings - TBD make this work on Mac workstations
 #VSCOde settings location for Linux: ~/.config/Code/User
