@@ -5,7 +5,9 @@ TLDR: Don't run this on hardware unless you want to overwrite your VSCode and ba
 
 ```cd ~ && git clone https://github.com/avincenthill/vscode-environment-automation.git && cd vscode-environment-automation/ && chmod u+x configDevEnvironment.sh && ./configDevEnvironment.sh```
 
-This shell script quickly configures VSCode and bash (.bashrc and .bash_profile) with settings found in /data. It also installs VSCode extensions and replaces VSCode User Settings and Keybindings with my preferences (wes bos cobalt2 color scheme, line bubbling/duplication, and more). Don't execute until you read through the shell script and understand what everything does, and I don't assume liability for you using this and accidentally overwriting your non-backed-up .bashrc.
+This above command changes directory into your home directory, clones this repo, changes directory into this repo, changes the mode of the configuration shell script and executes the script.
+
+The shell script quickly configures VSCode (settings.json and keybindings.json) and bash (.bashrc and .bash_profile) with settings found in /data. It also installs VSCode extensions and replaces VSCode User Settings and Keybindings with my preferences (wes bos cobalt2 color scheme, line bubbling/duplication, and more). Don't execute until you read through the shell script and understand what everything does, and I don't assume liability for you using this and accidentally overwriting your non-backed-up .bashrc.
 
 Use https://www.explainshell.com/# to help understand commands.
 
