@@ -57,7 +57,6 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 # Add git branch if its present to PS1
-
 parse_git_branch() {
  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
@@ -121,7 +120,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# custom aliases
+# add custom aliases
 alias update='sudo apt-get update'
 alias upgrade='sudo apt-get upgrade'
 alias install='sudo apt-get install'
@@ -145,5 +144,6 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 
+#try to cd into "Projects" and greet the user with the current timestamp
 cd ~/Projects
 echo "Hi $USER! It is $(date '+%A %B %d %Y %r') and time to code!"
