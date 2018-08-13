@@ -1,8 +1,10 @@
 #!/bin/bash
+#this is called a shebang, given to the shell indicating what program is used to interpret the script. In this case, it is /bin/bash. Other scripting languages such as Perl, awk, tcl, Tk, and python also use this mechanism.
 
 #clear terminal
 clear
 
+#print to screen
 echo "---------------------------------------------------"
 echo "Hi $USER! Commencing dev environment configuration:"
 echo "---------------------------------------------------"
@@ -30,8 +32,8 @@ echo "---------------------------------------------------"
 #echo "Configuring .gitconfig with default editor VSCode"
 #git config --global core.editor code
 
-
 #copy .bashrc
+#if you only need to know if the command succeeded or failed, don't bother testing $? variable, just test the command directly
 if yes | cp -f ./data/.bashrc ~/ ; then
     echo "Replaced .bashrc"
 else
@@ -59,7 +61,7 @@ else
     echo "FAILED to reload .bash_profile"
 fi
 
-#install vscode extensions - need to make sure "code" is working before the below
+#print to screen and install vscode extensions - need to make sure "code" command is working before the below, that's why you need to reload the bash configurations before this point
 echo "Installing my favorite VSCode extensions:"
 code --install-extension shardulm94.trailing-spaces
 code --install-extension formulahendry.auto-rename-tag
@@ -77,8 +79,8 @@ code --install-extension formulahendry.auto-close-tag
 code --install-extension shardulm94.trailing-spaces
 code --install-extension robertohuertasm.vscode-icons
 
-#copy vscode user settings - TBD make this work on Mac workstations
-#VSCOde settings location for Linux: ~/.config/Code/User
+#copy vscode user settings
+#VSCode settings location for Linux: ~/.config/Code/User
 #VSCOde settings location for MacOS use ~/Library/Application Support/Code
 if yes | cp -f ./data/settings.json "/Users/student/Library/Application Support/Code/User/settings.json" ; then
     echo "Replaced settings.json with my VSCode User Settings"
@@ -100,5 +102,7 @@ else
     echo "FAILED to launch VSCode"
 fi
 
+#print exit message to screen
+echo "---------------------------------------------------"
 echo "Happy hacking - AVH"
 echo "---------------------------------------------------"
