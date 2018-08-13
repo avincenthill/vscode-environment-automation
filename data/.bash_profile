@@ -1,3 +1,4 @@
+#add VSCode to PATH so we can use "code" command
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
