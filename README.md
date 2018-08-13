@@ -9,6 +9,6 @@ This shell script quickly configures VSCode and bash (.bashrc and .bash_profile)
 
 Use https://www.explainshell.com/# to help understand commands.
 
-My Hack Reactor presentation on this work: www.example.com
+My Hack Reactor presentation on this work: https://docs.google.com/presentation/d/1_L2a1sVSOQXRevjTWvXohneuIiQkw3WtuVyPOinaYuA/edit?usp=sharing
 
 Happy hacking! -AVH
