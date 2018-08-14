@@ -1,39 +1,16 @@
-# Automate your dev environment setup on a new machine!
+# Automate your dev environment setup on new hardware!
 ## vscode-environment-automation
 
-TLDR: configs dev enviroment for Hack Reactor workstations quickly by executing this in terminal:
+TLDR: Don't run this on hardware unless you want to overwrite your VSCode and bash settings. Config your dev enviroment (bash, VSCode) on Hack Reactor workstations quickly by executing this in terminal:
 
 ```cd ~ && git clone https://github.com/avincenthill/vscode-environment-automation.git && cd vscode-environment-automation/ && chmod u+x configDevEnvironment.sh && ./configDevEnvironment.sh```
 
+This above command changes directory into your home directory, clones this repo, changes directory into this repo, changes the mode of the configuration shell script and executes the script.
 
-This shell script quickly configures git (.gitconfig), VSCode, and bash (.bashrc) with settings found in /data. It also installs the following VSCode extensions
+The shell script quickly configures VSCode (settings.json and keybindings.json) and bash (.bashrc and .bash_profile) with settings found in /data. It also installs VSCode extensions and replaces VSCode User Settings and Keybindings with my preferences (wes bos cobalt2 color scheme, line bubbling/duplication, and more). Don't execute until you read through the shell script and understand what everything does, and I don't assume liability for you using this and accidentally overwriting your non-backed-up .bashrc.
 
-```
-shardulm94.trailing-spaces
-formulahendry.auto-rename-tag
-wesbos.theme-cobalt2
-dbaeumer.vscode-eslint
-donjayamanne.githistory
-sysoev.language-stylus
-ritwickdey.liveserver
-esbenp.prettier-vscode
-ms-python.python
-equimper.react-native-react-redux
-wayou.vscode-todo-highlight
-vsmobile.vscode-react-native
-formulahendry.auto-close-tag
-shardulm94.trailing-spaces
-robertohuertasm.vscode-icons
-```
+Use https://www.explainshell.com/# to help understand commands.
 
-and replaces and reloads .bashrc and .bash_profile and replaces VSCode User Settings and Keybindings with my preferences (wes bos cobalt2 color scheme, line bubbling/duplication, and more). Don't execute until you read through the shell script and understand what everything does, and I don't assume liability for you using this and accidentally overwriting your non-backed-up .bashrc.
-
-Remember to
-
-`chmod u+x configDevEnvironment.sh`
-
-before executing the script in the root directory of this repo with
-
-`./configDevEnvironment.sh`
+My Hack Reactor presentation on this work: https://docs.google.com/presentation/d/1_L2a1sVSOQXRevjTWvXohneuIiQkw3WtuVyPOinaYuA/edit?usp=sharing
 
 Happy hacking! -AVH
