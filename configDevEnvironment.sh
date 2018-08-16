@@ -81,7 +81,7 @@ code --install-extension robertohuertasm.vscode-icons
 
 #copy vscode user settings
 #VSCode settings location for Linux: ~/.config/Code/User
-#VSCOde settings location for MacOS use ~/Library/Application Support/Code
+#VSCode settings location for MacOS use ~/Library/Application Support/Code
 if yes | cp -f ./data/settings.json "/Users/student/Library/Application Support/Code/User/settings.json" ; then
     echo "Replaced settings.json with my VSCode User Settings"
 else
