@@ -71,7 +71,6 @@ code --install-extension donjayamanne.githistory
 code --install-extension sysoev.language-stylus
 code --install-extension ritwickdey.liveserver
 code --install-extension esbenp.prettier-vscode
-code --install-extension ms-python.python
 code --install-extension equimper.react-native-react-redux
 code --install-extension wayou.vscode-todo-highlight
 code --install-extension vsmobile.vscode-react-native
@@ -81,7 +80,10 @@ code --install-extension robertohuertasm.vscode-icons
 code --install-extension msjsdiag.debugger-for-chrome
 code --install-extension formulahendry.code-runner
 code --install-extension eamodio.gitlens
-
+code --install-extension coenraads.bracket-pair-colorizer
+code --install-extension oderwat.indent-rainbow
+code --install-extension wix.vscode-import-cost
+code --install-extension humao.rest-client
 
 #copy vscode user settings
 #VSCode settings location for Linux: ~/.config/Code/User
