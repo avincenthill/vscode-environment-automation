@@ -81,7 +81,6 @@ code --install-extension msjsdiag.debugger-for-chrome
 code --install-extension formulahendry.code-runner
 code --install-extension eamodio.gitlens
 code --install-extension coenraads.bracket-pair-colorizer
-code --install-extension oderwat.indent-rainbow
 code --install-extension wix.vscode-import-cost
 code --install-extension humao.rest-client
 
